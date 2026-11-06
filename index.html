@@ -1,0 +1,686 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Philemon | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- =====================================
+         1. HEADER / NAVIGATION BAR
+    ====================================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <!-- Website Logo -->
+            <a href="#" class="logo">Philemon</a>
+
+            <!-- Mobile Menu Toggle -->
+            <input type="checkbox" id="menu-toggle">
+
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Links -->
+            <div class="nav-menu">
+
+                <ul class="nav-links">
+
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#services">Services</a></li>
+
+                    <li><a href="#portfolio">Portfolio</a></li>
+
+                    <li><a href="#experience">Experience</a></li>
+
+                </ul>
+
+                <!-- Language Selector -->
+                <div class="language-selector">
+
+                    <a href="#" class="language">
+                        English
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                </div>
+
+                <!-- View My Works Button -->
+                <a href="#portfolio" class="work-button">
+                    View My Works
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+    
+<!-- =====================================
+     2. HERO / HOME SECTION
+====================================== -->
+
+<section class="hero" id="home">
+
+    <!-- Decorative Background Circles -->
+    <div class="bg-circle circle-one"></div>
+    <div class="bg-circle circle-two"></div>
+    <div class="bg-circle circle-three"></div>
+    <div class="bg-circle circle-four"></div>
+    <div class="bg-circle circle-five"></div>
+
+    <div class="hero-container">
+
+        <!-- LEFT SIDE: HERO TEXT -->
+        <div class="hero-content">
+
+            <h1>
+                Hi, I'm <span>Philemon</span>
+            </h1>
+
+            <p>
+                I'm a passionate Frontend Developer focused on
+                building beautiful, interactive, and accessible web
+                applications. I love turning designs into pixel-
+                perfect, high-performance user experiences using
+                modern technologies.
+            </p>
+
+            <!-- View Works Button -->
+            <a href="#portfolio" class="hero-button">
+                View Works
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <!-- RIGHT SIDE: PROFILE IMAGE -->
+        <div class="hero-image">
+
+            <div class="image-border">
+                <img src="images II/pheon 7.jpg" alt="Philem - Frontend Developer">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FLOATING SOCIAL MEDIA ICONS -->
+    <div class="social-icons">
+
+        <!-- Twitter -->
+        <a href="#" class="social-link twitter" aria-label="Twitter">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:your-email@example.com" class="social-link email" aria-label="Email">
+            <i class="fa-regular fa-envelope"></i>
+        </a>
+
+        <!-- Phone -->
+        <a href="tel:+2340000000000" class="social-link phone" aria-label="Phone">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        
+
+    </div>
+
+</section>
+<!-- =====================================
+     ABOUT SECTION
+====================================== -->
+<section class="about" id="about">
+
+    <div class="about-container">
+
+        <!-- LEFT SIDE -->
+        <div class="about-left">
+            <h2>
+                I bring <span>3 years</span> of user 
+                experience expertise.
+            </h2>
+
+            <p>
+                I am a frontend developer skilled in building 
+                responsive and accessible web applications using 
+                React, Vue, Tailwind, JavaScript, HTML, and CSS. 
+                I enjoy transforming design concepts into interactive 
+                user interfaces and optimizing performance for a 
+                seamless user experience.
+            </p>
+
+            <a href="#" class="download-btn">
+                <i class="fa-solid fa-download"></i>
+                Download CV
+            </a>
+        </div>
+
+        <!-- RIGHT SIDE - INFO CARD -->
+        <div class="about-right">
+            <div class="info-card">
+
+                <div class="info-item">
+                    <span class="info-label">NAME</span>
+                    <span class="info-value">Onyekaike Philemon</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-label">UNIVERSITY</span>
+                    <span class="info-value">Nnamdi Azikiwwe University</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-label">COUNTRY</span>
+                    <span class="info-value">Nigeria</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-label">LANGUAGES</span>
+                    <span class="info-value">English</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-label">FREELANCE</span>
+                    <span class="info-value">Available</span>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-label">ADDRESS</span>
+                    <span class="info-value">Surulere, Lagos State</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- MY EXPERIENCE SECTION -->
+<section class="experience-section">
+    <h2 class="exp-title">MY EXPERIENCE</h2>
+    
+    <div class="exp-container">
+        <div class="exp-card">
+            <h3>Digital Development Concepts</h3>
+            <span class="exp-role">Front-End Developer</span>
+            <span class="exp-date">June 2022 - Sep 2023</span>
+        </div>
+
+        <div class="exp-card">
+            <h3>IMT Computer</h3>
+            <span class="exp-role">Frontend Developer/Tutor</span>
+            <span class="exp-date">2024-Present</span>
+        </div>
+
+        <div class="exp-card">
+            <h3>Onyx Data System</h3>
+            <span class="exp-role">Front-End Developer</span>
+            <span class="exp-date">2025</span>
+        </div>
+
+        <div class="exp-card">
+            <h3>NetInterface Technologies</h3>
+            <span class="exp-role">Website Developer</span>
+            <span class="exp-date">2025</span>
+        </div>
+
+        <div class="exp-card">
+            <h3>Social Media Africa</h3>
+            <span class="exp-role">Front-End Developer</span>
+            <span class="exp-date">2025</span>
+        </div>
+    </div>
+
+    <div class="fixed-cta-bar">
+  <a href="tel:+2340000000000" class="cta-btn">Call</a>
+  <a href="https://wa.me/2340000000000" target="_blank" rel="noopener noreferrer" class="cta-btn">WhatsApp</a>
+</div>
+
+</section>
+<!-- MY SERVICES HEADER ONLY -->
+<section class="services-header-only">
+    <span class="services-badge">Services</span>
+    <h2>My Services</h2>
+    <div class="services-line"></div>
+</section>
+<!-- SERVICES - SAME HEIGHT BOXES -->
+<section class="services-section">
+    <div class="services-container">
+        
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3>Custom Website</h3>
+            <p>From landing pages to custom solutions, I build unique websites tailored to your specific business or personal needs.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <h3>E-commerce Website</h3>
+            <p>Custom online stores built with secure payment gateways, product management, and a seamless shopping experience for your customers.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fa-solid fa-building"></i>
+            </div>
+            <h3>Hotel Management Websites</h3>
+            <p>Streamlined hotel operations with features like room booking, guest management, check-in/check-out, etc</p>
+        </div>
+
+    </div>
+</section>
+<!-- SATISFIED CLIENTS SECTION -->
+<section class="clients-section">
+    <div class="clients-header">
+        <span class="clients-badge">Satisfied Clients</span>
+        <h2>More than 15 customers<br>trusted me.</h2>
+    </div>
+
+    <div class="clients-stats">
+        <div class="stat-box">
+            <h3>15</h3>
+            <p>Happy Clients</p>
+        </div>
+        <div class="stat-box">
+            <h3>15</h3>
+            <p>Projects Completed</p>
+        </div>
+        <div class="stat-box">
+            <h3>4</h3>
+            <p>Worked with Company</p>
+        </div>
+    </div>
+</section>
+<!-- HOW I WORK SECTION -->
+<section class="work-section">
+    <div class="work-header">
+        <span class="work-badge">How I Work</span>
+        <h2>I prepare your projects in 3<br>stages.</h2>
+        <div class="work-line"></div>
+    </div>
+
+    <div class="work-steps">
+        <div class="step-box">
+            <div class="step-circle">01</div>
+            <p>Research</p>
+        </div>
+
+        <div class="step-arrow">---- →</div>
+
+        <div class="step-box">
+            <div class="step-circle">02</div>
+            <p>Design</p>
+        </div>
+
+        <div class="step-arrow">---- →</div>
+
+        <div class="step-box">
+            <div class="step-circle active">03</div>
+            <p class="active-text">Development</p>
+        </div>
+    </div>
+</section>
+<!-- WHY CHOOSE ME SECTION -->
+<section class="why-section">
+    <div class="why-container">
+        <div class="why-header">
+            <span class="why-badge">Why Choose Me</span>
+            <h2>I specialize in frameworks UI for years.</h2>
+        </div>
+
+        <p class="why-text">
+            A front end library is being released every day and it is requested to master these technologies. I also follow the market every day and follow the updates of new frontend frameworks and programming frameworks. It is easier for me to keep up with new technologies in projects.
+        </p>
+
+        <div class="skills-wrapper">
+            <div class="skill-box">
+                <div class="skill-label">
+                    <span>Design</span>
+                    <span class="skill-percent">95%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 95%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-label">
+                    <span>Development</span>
+                    <span class="skill-percent">95%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 95%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- MY WORKS SECTION - 9 CARDS, SMALL GAP -->
+<section class="works-section">
+    <div class="works-header">
+        <span class="works-badge">Works</span>
+        <h2>My Works</h2>
+    </div>
+
+    <div class="works-grid">
+        <!-- CARD 1 -->
+        <div class="work-card">
+            <div class="work-img">
+                <img src="images II/my xiella.png" alt="Myxellia Dashboard">
+                <a href="#" class="work-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="work-info">
+                <span class="work-tag">Website Development</span>
+                <h3>Myxellia Dashboard</h3>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="work-card">
+            <div class="work-img">
+                <img src="images II/tech care.png" alt="Tech Care">
+                <a href="#" class="work-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="work-info">
+                <span class="work-tag">Website Development</span>
+                <h3>Tech Care</h3>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="work-card">
+            <div class="work-img">
+                <img src="images II/IMT computer.png" alt="IMT Computer">
+                <a href="#" class="work-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="work-info">
+                <span class="work-tag">Website Development</span>
+                <h3>IMT Computer</h3>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="work-card">
+            <div class="work-img">
+                <img src="images II/netineerface.png" alt="NetInterface Technologies">
+                <a href="#" class="work-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="work-info">
+                <span class="work-tag">Website Development</span>
+                <h3>NetInterface Technologies</h3>
+            </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="work-card">
+            <div class="work-img">
+                <img src="images II/e-commerce website.png" alt="E-commerce Website">
+                <a href="#" class="work-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="work-info">
+                <span class="work-tag">Website Development</span>
+                <h3>E-commerce Website</h3>
+            </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="work-card">
+            <div class="work-img">
+                <img src="images II/blog website.png" alt="Blog Website">
+                <a href="#" class="work-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="work-info">
+                <span class="work-tag">Website Development</span>
+                <h3>Blog Website</h3>
+            </div>
+        </div>
+
+        <!-- CARD 7 - NOW INSIDE GRID -->
+        <div class="work-card">
+            <div class="work-img">
+                <img src="images II/course management.png" alt="Course Management System">
+                <a href="#" class="work-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="work-info">
+                <span class="work-tag">Website Development</span>
+                <h3>Course Management System</h3>
+            </div>
+        </div>
+
+        <!-- CARD 8 - NOW INSIDE GRID -->
+        <div class="work-card">
+            <div class="work-img">
+                <img src="images II/analytical dashboard.jpg" alt="Analytics Dashboard">
+                <a href="#" class="work-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="work-info">
+                <span class="work-tag">Website Development</span>
+                <h3>Analytics Dashboard</h3>
+            </div>
+        </div>
+
+        <!-- CARD 9 - NOW INSIDE GRID -->
+        <div class="work-card">
+            <div class="work-img">
+                <img src="images II/social media webapp.jpg" alt="Social Media WebApp">
+                <a href="#" class="work-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="work-info">
+                <span class="work-tag">Website Development</span>
+                <h3>Social Media WebApp</h3>
+            </div>
+        </div>
+
+    </div> <!-- closes works-grid -->
+</section> <!-- closes works-section -->
+<!-- MY CLIENTS / TESTIMONIAL SECTION - CLEAN -->
+<section class="testimonial-section">
+    <div class="testimonial-top">
+        <div class="testimonial-title">
+            <span class="testimonial-badge">Testimonial</span>
+            <h2>My Clients</h2>
+        </div>
+        <div class="testimonial-arrows">
+            <button class="t-arrow"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="t-arrow"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <div class="testimonial-grid">
+        <!-- CARD 1 -->
+        <div class="testimonial-card">
+            <span class="quote-icon"><i class="fa-solid fa-quote-right"></i><i class="fa-solid fa-quote-right"></i></span>
+            <h3>IMT Computers</h3>
+            <span class="t-tag">Website Development</span>
+            <p>"We needed a functional, user-friendly website fast — and Mayowa delivered beyond our expectations. From layout to performance, everything was on point."</p>
+            <div class="t-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="testimonial-card">
+            <span class="quote-icon"><i class="fa-solid fa-quote-right"></i><i class="fa-solid fa-quote-right"></i></span>
+            <h3>Fiber Optics Consults</h3>
+            <span class="t-tag">Website Development</span>
+            <p>"Working with Mayowa was a game changer. He understood exactly what we needed for our training platform and built a system that's both efficient and easy to manage."</p>
+            <div class="t-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ LIST - 6 QUESTIONS -->
+<section class="faq-section">
+    <div class="faq-grid">
+        <!-- Q1 -->
+        <div class="faq-card">
+            <div class="faq-question">
+                <div class="faq-left">
+                    <span class="q-icon"><i class="fa-regular fa-circle-question"></i></span>
+                    <p>What kind of websites do you build?</p>
+                </div>
+                <span class="plus">+</span>
+            </div>
+            <div class="faq-answer">
+                I build custom websites, e-commerce stores, hotel management systems, dashboards, blogs and portfolio websites using modern frontend technologies.
+            </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="faq-card">
+            <div class="faq-question">
+                <div class="faq-left">
+                    <span class="q-icon"><i class="fa-regular fa-circle-question"></i></span>
+                    <p>How long does it take to complete a website?</p>
+                </div>
+                <span class="plus">+</span>
+            </div>
+            <div class="faq-answer">
+                Depending on complexity, a landing page takes 2-3 days, while a full website takes 1-3 weeks including design and development.
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-card">
+            <div class="faq-question">
+                <div class="faq-left">
+                    <span class="q-icon"><i class="fa-regular fa-circle-question"></i></span>
+                    <p>What technologies do you use?</p>
+                </div>
+                <span class="plus">+</span>
+            </div>
+            <div class="faq-answer">
+                I use HTML, CSS, JavaScript, React, Vue, Tailwind CSS, and other modern frameworks to build fast and responsive websites.
+            </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-card">
+            <div class="faq-question">
+                <div class="faq-left">
+                    <span class="q-icon"><i class="fa-regular fa-circle-question"></i></span>
+                    <p>Can I see samples of your work?</p>
+                </div>
+                <span class="plus">+</span>
+            </div>
+            <div class="faq-answer">
+                Yes, check the My Works section. Projects like Myxellia Dashboard, Tech Care, IMT Computer and E-commerce websites are available.
+            </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="faq-card">
+            <div class="faq-question">
+                <div class="faq-left">
+                    <span class="q-icon"><i class="fa-regular fa-circle-question"></i></span>
+                    <p>Do you work on both design and development?</p>
+                </div>
+                <span class="plus">+</span>
+            </div>
+            <div class="faq-answer">
+                Yes, I handle both UI design research and frontend development to deliver pixel-perfect, high-performance user experiences.
+            </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="faq-card">
+            <div class="faq-question">
+                <div class="faq-left">
+                    <span class="q-icon"><i class="fa-regular fa-circle-question"></i></span>
+                    <p>Are you available for full-time or freelance roles?</p>
+                </div>
+                <span class="plus">+</span>
+            </div>
+            <div class="faq-answer">
+                Yes, I am available for freelance projects and full-time roles. You can reach me via email or WhatsApp.
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.querySelectorAll('.faq-card').forEach(card => {
+    card.querySelector('.faq-question').addEventListener('click', () => {
+        card.classList.toggle('active');
+    });
+});
+</script>
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Column 1: About Me -->
+    <div class="footer-col">
+      <h3>About Me</h3>
+      <p>A Frontend developer crafting responsive, user-centric web interfaces with HTML, CSS, JavaScript, Vue and React. Transforming designs into functional, accessible digital experiences.</p>
+    </div>
+
+    <!-- Column 2: Useful Links -->
+    <div class="footer-col">
+      <h3>Useful Links</h3>
+      <ul class="footer-links">
+        <li><a href="#"><span>&gt;</span> My Team</a></li>
+        <li><a href="#"><span>&gt;</span> My Services</a></li>
+        <li><a href="#"><span>&gt;</span> My Resume</a></li>
+        <li><a href="#"><span>&gt;</span> My Works</a></li>
+        <li><a href="#"><span>&gt;</span> Get in Touch</a></li>
+        <li><a href="#"><span>&gt;</span> Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact Info (Icons Removed) -->
+    <div class="footer-col">
+      <h3>Contact Info</h3>
+      <ul class="footer-contact">
+        <li>Surulere, Lagos</li>
+        <li>chukwuemekaonyekaike@gmail.com<</li>
+        <li>08127411019</li>
+        <li>9am–4pm</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>&copy; 2026. All Rights Reserved. Mayowa</p>
+  </div>
+</footer>
+<!-- Back to Top Button -->
+<a href="#" class="back-to-top" id="scrollTopBtn" aria-label="Scroll to Top">
+  <i class="fa-solid fa-angle-up"></i>
+</a>
+</body>
+</html>

@@ -1,0 +1,1723 @@
+/* =========================================
+   1. GLOBAL SETTINGS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0e0101;
+    color: #111111;
+}
+
+/* =========================================
+   2. HEADER / NAVIGATION BAR
+========================================= */
+
+.header {
+    width: 100%;
+    min-height: 62px;
+    background-color: #a8a3da;
+    border: 1px solid #e5e5e5;
+}
+
+/* =========================================
+   3. NAVBAR CONTAINER
+========================================= */
+
+.navbar {
+    width: 100%;
+    min-height: 60px;
+    padding: 0 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* =========================================
+   4. WEBSITE LOGO
+========================================= */
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #050402;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* =========================================
+   5. NAVIGATION MENU
+========================================= */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    list-style: none;
+}
+
+.nav-links li a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #050402;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: hsla(244, 96%, 52%, 0.966);
+}
+
+/* =========================================
+   6. LANGUAGE SELECTOR
+========================================= */
+
+.language-selector {
+    margin-left: 44px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #050402;
+    text-decoration: none;
+}
+
+.language i {
+    font-size: 11px;
+}
+
+/* =========================================
+   7. VIEW MY WORKS BUTTON
+========================================= */
+
+.work-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 17px;
+    margin-left: 160px;
+    background-color: hsla(244, 96%, 52%, 0.966);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 7px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+.work-button:hover {
+    background-color:hsla(244, 96%, 52%, 0.966);
+}
+
+/* =========================================
+   8. MOBILE MENU ICON
+========================================= */
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 2px;
+    background-color: #FAF9F6; 
+    border-radius: 5px;
+}
+
+/* =========================================
+   10. HERO SECTION - DARK BLUE
+========================================= */
+
+.hero {
+    width: 100%;
+    min-height: 570px;
+    background-color: #010307;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 5.1%;
+}
+
+/* =========================================
+   11. HERO CONTAINER
+========================================= */
+
+.hero-container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================================
+   12. HERO TEXT CONTENT
+========================================= */
+
+.hero-content {
+    width: 50%;
+    max-width: 620px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 17px;
+}
+
+.hero-content h1 span {
+    color:hsla(244, 96%, 52%, 0.966);
+}
+
+.hero-content p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.34;
+    color: #e6e6e6;
+    margin-bottom: 34px;
+}
+
+/* =========================================
+   13. VIEW WORKS BUTTON
+========================================= */
+
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    padding: 12px 24px;
+    background-color: hsla(244, 96%, 52%, 0.966);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 7px;
+    transition: 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: hsla(244, 96%, 52%, 0.966);
+    transform: translateY(-3px);
+}
+
+.hero-button i {
+    font-size: 14px;
+}
+
+/* =========================================
+   14. HERO PROFILE IMAGE
+========================================= */
+
+.hero-image {
+    width: 570px;
+    height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.image-border {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color:black ;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-border img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+/* =========================================
+   15. DECORATIVE BACKGROUND CIRCLES
+========================================= */
+
+.bg-circle {
+    position: absolute;
+    background-color:hsla(244, 96%, 52%, 0.966);
+    border-radius: 50%;
+    filter: blur(4px);
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.circle-one { width: 100px; height: 100px; top: -50px; left: 20px; }
+.circle-two { width: 95px; height: 95px; top: -18px; right: 18px; }
+.circle-three { width: 60px; height: 60px; bottom: 80px; left: 80px; }
+.circle-four { width: 65px; height: 65px; bottom: 0; right: 5px; }
+.circle-five { width: 65px; height: 65px; bottom: -45px; left: 50%; }
+
+/* =========================================
+   16. FLOATING SOCIAL MEDIA ICONS - FIXED
+========================================= */
+
+.social-icons {
+    position: fixed;
+    right: 10px;
+    top: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 100;
+}
+
+.social-link {
+    width: 41px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.twitter {
+    background-color: #3285f6;
+}
+
+.email {
+    background-color: #13c76a;
+}
+
+.phone {
+    background-color: #000000 !important; /* FIXED: BLACK CIRCLE */
+    color: #ffffff !important;
+}
+
+
+/* =========================================
+   18. BACK TO TOP BUTTON
+========================================= */
+
+.back-to-top {
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    right: 10px;
+    bottom: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(244, 96%, 52%, 0.966);
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 16px;
+    text-decoration: none;
+    z-index: 100;
+    transition: 0.3s ease;
+    
+}
+
+.back-to-top:hover {
+    background-color:hsla(244, 96%, 52%, 0.966);
+    transform: translateY(-4px);
+}
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about {
+    width: 100%;
+    background-color: #a8a3da;
+    padding: 80px 9%;
+}
+
+.about-container {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.about-left { width: 48%; }
+
+.about-left h2 {
+    font-size: 46px;
+    font-weight: 800;
+    color: #111;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.about-left h2 span { color:hsla(244, 96%, 52%, 0.966); }
+
+.about-left p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 28px;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: hsla(244, 96%, 52%, 0.966);
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.about-right { width: 48%; }
+
+.info-card {
+    background-color: #f8f9fb;
+    border-radius: 12px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 40px;
+}
+
+.info-item { display: flex; flex-direction: column; gap: 6px; }
+
+.info-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.info-value { font-size: 14px; font-weight: 600; color: #111; }
+
+/* =========================================
+   19. RESPONSIVE - TABLET
+========================================= */
+
+@media screen and (max-width: 1100px) {
+    .navbar { padding: 0 35px; }
+    .nav-links { gap: 25px; }
+    .language-selector { margin-left: 25px; }
+    .work-button { margin-left: 35px; }
+    .hero { padding: 0 4%; }
+    .hero-content { width: 48%; }
+    .hero-content h1 { font-size: 48px; }
+    .hero-content p { font-size: 19px; }
+    .hero-image { width: 450px; height: 450px; }
+    .image-border { padding: 23px; }
+}
+
+/* =========================================
+   20. RESPONSIVE - SMALL TABLETS
+========================================= */
+
+@media screen and (max-width: 850px) {
+    .navbar { padding: 0 25px; }
+    .menu-icon { display: flex; }
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 62px;
+        left: 0;
+        width: 100%;
+        padding: 25px;
+        background-color: #00008B; /* FIXED: match header */
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        z-index: 100;
+        border-top: 1px solid #1a1a8a;
+    }
+    #menu-toggle:checked ~ .nav-menu { display: flex; }
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+    }
+    .nav-links li a { font-size: 15px; }
+    .language-selector { margin-left: 0; }
+    .work-button { margin-left: 0; }
+    .hero { min-height: 500px; padding: 50px 5%; }
+    .hero-content { width: 48%; }
+    .hero-content h1 { font-size: 40px; }
+    .hero-content p { font-size: 17px; }
+    .hero-image { width: 380px; height: 380px; right: 0; }
+    .image-border { padding: 20px; }
+    .contact-links { left: 40%; gap: 35px; }
+}
+
+/* =========================================
+   21. RESPONSIVE - MOBILE
+========================================= */
+
+@media screen and (max-width: 600px) {
+    .navbar { min-height: 60px; padding: 0 20px; }
+    .logo { font-size: 22px; }
+    .nav-menu { top: 60px; padding: 25px 20px; }
+    .work-button { height: 40px; padding: 0 18px; font-size: 13px; }
+    .hero { min-height: auto; padding: 65px 25px 90px; }
+    .hero-container { flex-direction: column; align-items: flex-start; gap: 45px; }
+    .hero-content { width: 100%; max-width: 100%; }
+    .hero-content h1 { font-size: 38px; margin-bottom: 15px; }
+    .hero-content p { font-size: 16px; line-height: 1.6; margin-bottom: 25px; }
+    .hero-button { padding: 12px 20px; font-size: 14px; }
+    .hero-image {
+        width: 300px; height: 300px; position: relative;
+        top: auto; right: auto; transform: none; align-self: center;
+    }
+    .image-border { padding: 17px; }
+    .contact-links {
+        position: relative; left: auto; bottom: auto;
+        justify-content: center; margin: 45px auto 0; gap: 45px;
+    }
+    .social-icons { right: 5px; top: 35%; gap: 10px; }
+    .social-link { width: 35px; height: 35px; font-size: 13px; }
+    .back-to-top { width: 42px; height: 42px; right: 10px; bottom: 12px; }
+    .about { padding: 50px 20px; }
+    .info-card { grid-template-columns: 1fr; gap: 20px; padding: 22px; }
+    .about-left h2 { font-size: 28px; }
+    .about-left, .about-right { width: 100%; }
+    .about-container { flex-direction: column; gap: 40px; }
+}
+
+/* =========================================
+   22. RESPONSIVE - VERY SMALL MOBILE
+========================================= */
+
+@media screen and (max-width: 380px) {
+    .hero { padding: 50px 20px 80px; }
+    .hero-content h1 { font-size: 32px; }
+    .hero-content p { font-size: 15px; }
+    .hero-image { width: 250px; height: 250px; }
+    .image-border { padding: 14px; }
+    .contact-links { gap: 30px; }
+}
+/* =========================================
+   MY EXPERIENCE SECTION
+========================================= */
+.experience-section {
+    width: 100%;
+    background: hsla(244, 96%, 52%, 0.966);
+    padding: 70px 6% 80px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.exp-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #111;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+}
+
+.exp-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.exp-card {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    padding: 22px 22px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    transition: 0.3s ease;
+}
+
+.exp-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.exp-card h3 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.exp-role {
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    color: hsla(244, 96%, 52%, 0.966);
+    margin-bottom: 8px;
+}
+
+.exp-date {
+    display: block;
+    font-size: 17px;
+    color: #888;
+}
+
+.exp-actions {
+   position: fixed;
+    bottom: 28px;
+    left: 45.3%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 3;
+    
+}
+/* Container fixed at the bottom center of the screen */
+.fixed-cta-bar {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 9999;
+}
+
+/* Black pill-shaped button styling */
+.cta-btn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 12px 28px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 10px; /* Adjust corner roundness if needed */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+/* =========================================
+   MY SERVICES HEADER ONLY - NO ICONS
+========================================= */
+.services-header-only {
+    width: 100%;
+    background: #a8a3da;
+    padding: 60px 0 20px;
+    text-align: center;
+}
+
+.services-badge {
+    display: inline-block;
+    background: hsla(244, 96%, 52%, 0.966);
+    color: #ffffff;
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.services-header-only h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #111111;
+    margin-bottom: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.services-line {
+    width: 60px;
+    height: 4px;
+    background: hsla(244, 96%, 52%, 0.966);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .services-header-only h2 {
+        font-size: 24px;
+    }
+}
+/* =========================================
+   MY SERVICES - 3 CARDS ONLY
+========================================= */
+.services-section {
+    width: 100%;
+    background: #a8a3da;
+    padding: 40px 6% 80px;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.service-card {
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    padding: 32px 26px;
+    text-align: left;
+    transition: 0.3s ease;
+    height: 100px;
+    min-height: 380px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.07);
+}
+
+.service-icon {
+    width: 50px;
+    height: 50px;
+    background: #fff0eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsla(244, 96%, 52%, 0.966);
+    font-size: 18px;
+    margin: 0 auto 14px auto;
+}
+
+.service-card h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 14px;
+}
+
+.service-card p {
+    font-size: 17.3px;
+    line-height: 1.7;
+    color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .services-section {
+        padding: 30px 20px 50px;
+    }
+}
+/* =========================================
+   SATISFIED CLIENTS - BLACK STATS SECTION
+========================================= */
+.clients-section {
+    width: 100%;
+    background-color: #000000;
+    background-image: radial-gradient(rgba(255,255,255,0.15) 1px, transparent 1px);
+    background-size: 30px 30px;
+    padding: 70px 6% 80px;
+    text-align: center;
+    position: relative;
+}
+
+.clients-header {
+    margin-bottom: 65px;
+}
+
+.clients-badge {
+    display: inline-block;
+    background: hsla(244, 96%, 52%, 0.966);
+    color: #ffffff;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-bottom: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.clients-header h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.25;
+    font-family: 'Poppins', sans-serif;
+}
+
+.clients-stats {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.stat-box h3 {
+    font-size: 52px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 8px;
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.stat-box p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #d1d5db;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 900px) {
+    .clients-header h2 {
+        font-size: 26px;
+    }
+    .stat-box h3 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 600px) {
+    .clients-section {
+        padding: 50px 20px 60px;
+    }
+    .clients-stats {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+    .clients-header {
+        margin-bottom: 45px;
+    }
+    .clients-header h2 {
+        font-size: 22px;
+    }
+    .stat-box h3 {
+        font-size: 40px;
+    }
+    .stat-box p {
+        font-size: 14px;
+    }
+}
+/* =========================================
+   HOW I WORK - 3 STAGES
+========================================= */
+.work-section {
+    width: 100%;
+    background: #0f0f0f;
+    padding: 70px 6% 80px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.work-header {
+    margin-bottom: 60px;
+}
+
+.work-badge {
+    display: inline-block;
+    background: hsla(244, 96%, 52%, 0.966);
+    color: #fff;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.work-header h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.work-line {
+    width: 45px;
+    height: 4px;
+    background:hsla(244, 96%, 52%, 0.966);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.work-steps {
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.step-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.step-circle {
+    width: 58px;
+    height: 58px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+}
+
+.step-circle.active {
+    background: hsla(244, 96%, 52%, 0.966);
+    border-color: hsla(244, 96%, 52%, 0.966);
+    color: #fff;
+}
+
+.step-box p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.step-box p.active-text {
+    color: hsla(244, 96%, 52%, 0.966);
+}
+
+.step-arrow {
+    color: #555;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 28px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 700px) {
+    .work-section {
+        padding: 50px 20px 60px;
+    }
+    .work-header h2 {
+        font-size: 22px;
+    }
+    .work-steps {
+        gap: 18px;
+    }
+    .step-circle {
+        width: 50px;
+        height: 50px;
+        font-size: 14px;
+    }
+    .step-arrow {
+        font-size: 10px;
+        margin-bottom: 25px;
+    }
+    .step-box p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 400px) {
+    .work-steps {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .step-arrow {
+        transform: rotate(90deg);
+        margin: 0;
+    }
+}
+/* =========================================
+   WHY CHOOSE ME SECTION
+========================================= */
+.why-section {
+    width: 100%;
+    background: #ffffff;
+    padding: 80px 6% 90px;
+    box-sizing: border-box;
+}
+
+.why-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.why-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.why-badge {
+    display: inline-block;
+    background: #ff3d00;
+    color: #fff;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.why-header h2 {
+    font-size: 35px;
+    font-weight: 800;
+    color: #111;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.why-text {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #888;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.skill-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skill-label span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+}
+
+.skill-percent {
+    color: #ff3d00 !important;
+    font-weight: 700 !important;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background: #f2f2f2;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: #ff3d00;
+    border-radius: 20px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 768px) {
+    .why-section {
+        padding: 50px 20px 60px;
+    }
+    .why-header h2 {
+        font-size: 24px;
+    }
+    .skills-wrapper {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .why-text {
+        font-size: 14px;
+        margin-bottom: 35px;
+    }
+}
+/* =========================================
+   WHY CHOOSE ME SECTION
+========================================= */
+.why-section {
+    width: 100%;
+    background: #a8a3da;
+    padding: 80px 6% 90px;
+    box-sizing: border-box;
+}
+
+.why-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.why-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.why-badge {
+    display: inline-block;
+    background: hsla(244, 96%, 52%, 0.966);
+    color: #fff;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.why-header h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #111;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.why-text {
+    font-size: 19px;
+    line-height: 1.8;
+    color: #1f1e1e;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.skill-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skill-label span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111;
+}
+
+.skill-percent {
+    color: hsla(244, 96%, 52%, 0.966) !important;
+    font-weight: 700 !important;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background: #f2f2f2;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: hsla(244, 96%, 52%, 0.966);
+    border-radius: 20px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 768px) {
+    .why-section {
+        padding: 50px 20px 60px;
+    }
+    .why-header h2 {
+        font-size: 24px;
+    }
+    .skills-wrapper {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .why-text {
+        font-size: 14px;
+        margin-bottom: 35px;
+    }
+}
+/* =========================================
+   MY WORKS - 9 CARDS, 18PX GAP
+   Only orange arrow - no side icons
+========================================= */
+.works-section {
+    width: 100%;
+    background: #a8a3da;
+    padding: 60px 0 80px;
+    box-sizing: border-box;
+}
+
+.works-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.works-badge {
+    display: inline-block;
+    background: hsla(244, 96%, 52%, 0.966);
+    color: #fff;
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.works-header h2 {
+    font-size: 34px;
+    font-weight: 800;
+    color: #111;
+    font-family: 'Poppins', sans-serif;
+}
+
+.works-grid {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 18px;
+    row-gap: 18px; /* SMALL GAP - like your image */
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.work-card {
+    background: #fff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.work-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.work-img {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.work-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.work-arrow {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    background: hsla(244, 96%, 52%, 0.966);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.work-info {
+    padding: 14px 16px 18px;
+}
+
+.work-tag {
+    display: inline-block;
+    background: #eef0ff;
+    color: hsla(244, 96%, 52%, 0.966);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.work-info h3 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #111;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .works-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+    .works-section { padding: 40px 0 50px; }
+    .works-grid { 
+        grid-template-columns: 1fr; 
+        row-gap: 16px; 
+        padding: 0 16px; 
+    }
+    .work-img { height: 210px; }
+    .works-header h2 { font-size: 26px; }
+}
+/* =========================================
+   MY CLIENTS - LIKE YOUR LAST IMAGE
+   Wide left/right spacing, more top space
+   No icons - clean
+========================================= */
+.testimonial-section {
+    width: 100%;
+    background: #a8a3da;
+    padding: 70px 60px 80px; /* LEFT/RIGHT 60px - like image */
+    box-sizing: border-box;
+}
+
+.testimonial-top {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto 45px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.testimonial-badge {
+    display: inline-block;
+    background: hsla(244, 96%, 52%, 0.966)0;
+    color: #fff;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.testimonial-title h2 {
+    font-size: 34px;
+    font-weight: 800;
+    color: #111;
+    line-height: 1.1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.testimonial-arrows {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.t-arrow {
+    width: 38px;
+    height: 38px;
+    border: 1.5px solid #ececec;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+    color: #111;
+}
+
+.testimonial-grid {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px; /* gap like image */
+    box-sizing: border-box;
+}
+
+.testimonial-card {
+    background: #fff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    padding: 38px 32px 32px;
+    position: relative;
+}
+
+.quote-icon {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    color: #ffddd0;
+    font-size: 32px;
+    letter-spacing: -2px;
+    display: flex;
+}
+
+.testimonial-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.t-tag {
+    display: inline-block;
+    background: #fff0ea;
+    color: hsla(244, 96%, 52%, 0.966);
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.testimonial-card p {
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: #777;
+    margin-bottom: 22px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.t-stars {
+    color: hsla(244, 96%, 52%, 0.966);
+    font-size: 16px;
+    display: flex;
+    gap: 4px;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .testimonial-section { padding: 50px 24px 60px; }
+}
+@media (max-width: 768px) {
+    .testimonial-section { padding: 40px 16px 50px; }
+    .testimonial-grid { grid-template-columns: 1fr; }
+    .testimonial-title h2 { font-size: 26px; }
+}
+/* =========================================
+   FAQ HEADER - LIKE YOUR IMAGE
+   No floating icons
+========================================= */
+.faq-header {
+    width: 100%;
+    background: #a8a3da;
+    padding: 70px 20px 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.faq-badge {
+    display: inline-block;
+    background: hsla(244, 96%, 52%, 0.966);
+    color: #fff;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.faq-header h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 14px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+}
+
+.faq-line {
+    width: 60px;
+    height: 3px;
+    background: hsla(244, 96%, 52%, 0.966);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .faq-header {
+        padding: 50px 16px 30px;
+    }
+    .faq-header h2 {
+        font-size: 24px;
+    }
+}
+/* =========================================
+   FAQ - SPACIOUS LIKE YOUR IMAGE
+   No floating icons
+========================================= */
+.faq-section {
+    width: 100%;
+    background: #a8a3da;
+    padding: 40px 80px 100px; /* more left/right space */
+    box-sizing: border-box;
+}
+
+.faq-grid {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 28px; /* wider space between columns */
+    row-gap: 28px; /* taller space between rows - SPACIOUS */
+}
+
+.faq-card {
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 8px;
+    min-height: 88px; /* taller card like image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 24px; /* more padding inside - spacious */
+    gap: 16px;
+}
+
+.faq-left {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.q-icon {
+    font-size: 20px;
+    color: #111;
+    min-width: 22px;
+}
+
+.faq-left p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.plus {
+    color: hsla(244, 96%, 52%, 0.966);
+    font-size: 22px;
+    font-weight: 300;
+    min-width: 18px;
+    text-align: center;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 24px 0 60px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.faq-card.active .faq-answer {
+    max-height: 300px;
+    padding-bottom: 24px;
+}
+
+.faq-card.active .plus {
+    transform: rotate(45deg);
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .faq-section { padding: 30px 24px 80px; }
+}
+
+@media (max-width: 768px) {
+    .faq-section { padding: 20px 16px 60px; }
+    .faq-grid { 
+        grid-template-columns: 1fr; 
+        gap: 18px;
+    }
+    .faq-question { padding: 20px 18px; }
+}
+/* Footer Layout */
+.footer {
+  background-color: #121212;
+  color: #cccccc;
+  font-family: sans-serif;
+  padding: 60px 20px 20px 20px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #222222;
+}
+
+/* Headings with orange accent line underneath */
+.footer-col h3 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.footer-col h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 35px;
+  height: 2px;
+  background-color: hsla(244, 96%, 52%, 0.966);
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #aaaaaa;
+}
+
+/* Useful Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links a span {
+  color: hsla(244, 96%, 52%, 0.966)s;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  color: hsla(244, 96%, 52%, 0.966);
+}
+
+/* Contact Info list */
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin-bottom: 12px;
+}
+
+/* Footer Bottom Copyright */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 16px;
+  color: #777777;
+}

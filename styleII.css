@@ -1,0 +1,584 @@
+/* =========================================
+   1. GLOBAL SETTINGS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0e0101;
+    color: #111111;
+}
+
+/* =========================================
+   2. HEADER / NAVIGATION BAR
+========================================= */
+
+.header {
+    width: 100%;
+    min-height: 62px;
+    background-color: #a8a3da;
+    border: 1px solid #e5e5e5;
+}
+
+/* =========================================
+   3. NAVBAR CONTAINER
+========================================= */
+
+.navbar {
+    width: 100%;
+    min-height: 60px;
+    padding: 0 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* =========================================
+   4. WEBSITE LOGO
+========================================= */
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #050402;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* =========================================
+   5. NAVIGATION MENU
+========================================= */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    list-style: none;
+}
+
+.nav-links li a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #050402;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: hsla(244, 96%, 52%, 0.966);
+}
+
+/* =========================================
+   6. LANGUAGE SELECTOR
+========================================= */
+
+.language-selector {
+    margin-left: 44px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #050402;
+    text-decoration: none;
+}
+
+.language i {
+    font-size: 11px;
+}
+
+/* =========================================
+   7. VIEW MY WORKS BUTTON
+========================================= */
+
+
+.work-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 17px;
+    margin-left: 160px;
+    background-color: hsla(244, 96%, 52%, 0.966);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 7px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+.work-button:hover {
+    background-color:hsla(244, 96%, 52%, 0.966);
+}
+
+/* =========================================
+   8. MOBILE MENU ICON
+========================================= */
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 2px;
+    background-color: #FAF9F6; 
+    border-radius: 5px;
+}
+
+/* ========================================== */
+/* PORTFOLIO HERO BANNER STYLES */
+/* ========================================== */
+.portfolio-hero {
+    position: relative;
+    background-color: #435368; /* Slate blue background from design */
+    padding: 90px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.breadcrumb {
+    font-size: 15px;
+    color: #cfd8e3;
+    font-weight: 400;
+}
+
+.breadcrumb .arrow {
+    margin: 0 6px;
+}
+
+.breadcrumb .current {
+    color: #ffffff;
+}
+
+/* =========================================
+   16. FLOATING SOCIAL MEDIA ICONS - FIXED
+========================================= */
+
+.social-icons {
+    position: fixed;
+    right: 10px;
+    top: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 100;
+}
+
+.social-link {
+    width: 41px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.twitter {
+    background-color: #3285f6;
+}
+
+.email {
+    background-color: #13c76a;
+}
+
+.phone {
+    background-color: #000000 !important; /* FIXED: BLACK CIRCLE */
+    color: #ffffff !important;
+}
+
+
+/* =========================================
+   18. BACK TO TOP BUTTON
+========================================= */
+
+.back-to-top {
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    right: 10px;
+    bottom: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(244, 96%, 52%, 0.966);
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 16px;
+    text-decoration: none;
+    z-index: 100;
+    transition: 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color:hsla(244, 96%, 52%, 0.966);
+    transform: translateY(-4px);
+}
+
+
+/* ========================================== */
+/* PORTFOLIO FILTER STYLES */
+/* ========================================== */
+.portfolio-filter-section {
+    padding: 50px 20px;
+    background-color: #a8a3da;
+    
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 12px 28px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+/* Active Orange Button */
+.filter-btn.active {
+    background-color: hsla(244, 96%, 52%, 0.966);
+    color: #ffffff;
+    border: 2px solid hsla(244, 96%, 52%, 0.966);
+}
+
+/* Outline Button */
+.filter-btn:not(.active) {
+    background-color: transparent;
+    color: #435368;
+    border: 1px solid #d0d7de;
+}
+
+.filter-btn:not(.active):hover {
+    border-color:hsla(244, 96%, 52%, 0.966);
+    color: hsla(244, 96%, 52%, 0.966);
+}
+
+
+/* ========================================== */
+/* RESPONSIVENESS (MOBILE & TABLET MEDIA QUERIES) */
+/* ========================================== */
+
+/* Tablet Screens (under 992px) */
+@media screen and (max-width: 992px) {
+    .navbar {
+        padding: 15px 30px;
+    }
+    
+    .nav-menu {
+        gap: 20px;
+    }
+}
+
+/* Mobile Screens (under 768px) */
+@media screen and (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .portfolio-hero {
+        padding: 60px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .floating-sidebar {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .filter-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .filter-btn {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+.colored-banner-section {
+    width: 100%;
+    background-color: #a8a3da;
+    padding: 40px 20px;
+}
+.works-grid {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 18px;
+    row-gap: 18px; /* SMALL GAP - like your image */
+    padding: 0 20px;
+    box-sizing: border-box;
+    background: #a8a3da;
+}
+
+.work-card {
+    background: #fff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    
+}
+
+.work-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.work-img {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.work-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.work-arrow {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    background: hsla(244, 96%, 52%, 0.966);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.work-info {
+    padding: 14px 16px 18px;
+}
+
+.work-tag {
+    display: inline-block;
+    background: #eef0ff;
+    color: hsla(244, 96%, 52%, 0.966);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.work-info h3 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #111;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .works-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+    .works-section { padding: 40px 0 50px; }
+    .works-grid { 
+        grid-template-columns: 1fr; 
+        row-gap: 16px; 
+        padding: 0 16px; 
+    }
+    .work-img { height: 210px; }
+    .works-header h2 { font-size: 26px; }
+}
+/* Container fixed at the bottom center of the screen */
+.fixed-cta-bar {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 9999;
+}
+
+/* Black pill-shaped button styling */
+.cta-btn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 12px 28px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 10px; /* Adjust corner roundness if needed */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+/* Footer Layout */
+.footer {
+  background-color: #121212;
+  color: #cccccc;
+  font-family: sans-serif;
+  padding: 60px 20px 60px 20px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #222222;
+}
+
+/* Headings with orange accent line underneath */
+.footer-col h3 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.footer-col h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 35px;
+  height: 2px;
+  background-color: hsla(244, 96%, 52%, 0.966);
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #aaaaaa;
+}
+
+/* Useful Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #aaaaaa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links a span {
+  color: #aaaaaa;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+/* Contact Info list */
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin-bottom: 12px;
+}
+
+/* Footer Bottom Copyright */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #777777;
+}
